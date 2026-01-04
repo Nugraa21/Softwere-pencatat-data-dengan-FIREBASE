@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "487325430394",
+    "project_id": "codetudo-46e63",
+    "storage_bucket": "codetudo-46e63.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:487325430394:android:4307147cce56e01d5b81c3",
+        "android_client_info": {
+          "package_name": "com.example.catatandata"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmJvgUZAzWy9JtDeAgj-oMoN931ouWngo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
