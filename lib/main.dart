@@ -19,7 +19,7 @@ void main() async {
     center: true,
     backgroundColor: Colors.transparent,
     skipTaskbar: false,
-    title: 'NugraForge',
+    title: 'iVaultX',
     titleBarStyle: TitleBarStyle.hidden,
   );
   windowManager.waitUntilReadyToShow(windowOptions, () async {
@@ -41,7 +41,7 @@ class IVaultXDesktop extends StatelessWidget {
       builder: (context, accentColor, _) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'NugraForge',
+          title: 'iVaultX',
           theme: ThemeData(
             brightness: Brightness.light,
             fontFamily: 'SF Pro Display',

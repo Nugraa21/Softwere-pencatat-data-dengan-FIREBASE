@@ -55,7 +55,7 @@ class _DashboardHomeState extends State<DashboardHome> {
                                 size: 32, color: StudioTheme.accent.value),
                           ),
                           const SizedBox(width: 16),
-                          const Text('NugraForge',
+                          const Text('VaultX',
                               style: TextStyle(
                                   fontSize: 32, fontWeight: FontWeight.w800)),
                         ],

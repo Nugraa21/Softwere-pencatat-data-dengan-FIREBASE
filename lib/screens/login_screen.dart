@@ -47,10 +47,10 @@ class _LoginScreenState extends State<LoginScreen>
     try {
       if (_isRegister) {
         await FirebaseAuth.instance.createUserWithEmailAndPassword(
-            email: "$username@nugraforge.app", password: password);
+            email: "$username@vaultx.app", password: password);
       }
       await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: "$username@nugraforge.app", password: password);
+          email: "$username@vaultx.app", password: password);
     } on FirebaseAuthException catch (e) {
       _shakeController.forward().then((_) => _shakeController.reverse());
       ScaffoldMessenger.of(context).showSnackBar(
@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen>
                                       color: StudioTheme.accent.value),
                                 ),
                                 const SizedBox(height: 48),
-                                const Text('NugraForge',
+                                const Text('vaultx',
                                     style: TextStyle(
                                         fontSize: 56,
                                         fontWeight: FontWeight.w800)),
