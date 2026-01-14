@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'widgets/auth_wrapper.dart';
@@ -12,20 +11,12 @@ import 'package:window_manager/window_manager.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // 🔒 KUNCI ORIENTASI UNTUK MOBILE (ANTI BUG ROTASI)
-  if (Platform.isAndroid || Platform.isIOS) {
-    await SystemChrome.setPreferredOrientations([
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
-  }
-
   // ✅ Firebase aman untuk Android & Desktop
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
 
-  // 🖥️ HANYA JALAN DI DESKTOP
+  // ✅ HANYA JALAN DI WINDOWS / LINUX / MAC
   if (!Platform.isAndroid && !Platform.isIOS) {
     await windowManager.ensureInitialized();
 
@@ -61,9 +52,7 @@ class IVaultXApp extends StatelessWidget {
             brightness: Brightness.light,
             useMaterial3: true,
             scaffoldBackgroundColor: StudioTheme.background,
-            colorScheme: ColorScheme.light(
-              primary: accentColor,
-            ),
+            colorScheme: ColorScheme.light(primary: accentColor),
           ),
           home: const AuthWrapper(),
         );

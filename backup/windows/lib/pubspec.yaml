@@ -1,3 +1,32 @@
+# name: catatandata
+# description: Nugra21 Desktop - Secure Vault & Notes
+# publish_to: 'none'
+# version: 1.0.0+1
+
+# environment:
+#   sdk: '>=3.2.0 <4.0.0'
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+#   cupertino_icons: ^1.0.8
+
+#   # Firebase - Gunakan versi terbaru yang kompatibel
+#   firebase_core: ^3.6.0
+#   firebase_auth: ^5.3.1
+#   cloud_firestore: ^5.4.4
+#   window_manager: ^0.3.8
+
+#   # Lainnya
+#   shared_preferences: ^2.3.2
+
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   flutter_lints: ^4.0.0
+
+# flutter:
+#   uses-material-design: true
 name: catatandata
 description: Nugra21 Desktop - Secure Vault & Notes
 publish_to: 'none'
@@ -25,16 +54,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/icon/
 
 flutter_launcher_icons:
-  android: true
-  ios: false
   windows:
     generate: true
     image_path: "assets/icon/app_icon.png"
     icon_size: 256
-  image_path: "assets/icon/app_icon.png"
-  adaptive_icon_background: "#F4F6FB"
-  adaptive_icon_foreground: "assets/icon/app_icon_foreground.png"
